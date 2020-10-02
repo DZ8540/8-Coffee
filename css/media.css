@@ -1,0 +1,93 @@
+@media screen and (max-width: 550px) {
+	body {
+		overflow-x: hidden !important;
+	}
+	.img-1 {
+		height: 400px !important;
+		display: unset !important;
+		margin-bottom: 50px;
+		position: static;
+	}
+
+	.my-col-1 {
+		text-align: center;
+	}
+
+	.slider_text {
+		font-size: 55px;
+		margin-bottom: 10px;
+	}
+	#mobile_P {
+		display: none !important;
+	}
+	.bg-1{
+ 	 background-position: 27% 9px;
+	}
+	#dilko_D {
+		margin-top: 22em;
+	}
+	.btn-amon{
+		    width: auto;
+	}
+
+	.my-nav-1 {
+		text-align: center;
+	}
+
+	.phone {
+		display: inline-block;
+	}
+
+	.phone-1 {
+		vertical-align: baseline !important;
+	}
+
+	.number {
+		display: inline-block;
+	}
+
+	.text {
+		line-height: 40px !important;
+	}
+
+	.coffee {
+		top: 0;
+		left: 0;
+		position: static;
+	}
+    .my-div-1 {
+        width: 273px;
+        height: 64px;
+    }
+    .my-div-2 {
+        width: 273px;
+    }
+	.my-div-4 {
+		right: 0 !important;
+	}
+
+	#block-2 {
+		margin-top: 0;
+	}
+
+	.my-div-5 {
+		margin-bottom: 30px;
+	}
+
+	.my-div-6 {
+		margin-top: 50px;
+	}
+
+	.h1-3 {
+		font-size: 40px;
+	}
+
+	.my-btn-2 {
+		display: inline;
+	}
+}
+@media screen and (max-width:376px) {
+	body {
+		overflow-x: hidden;
+	}
+}

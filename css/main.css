@@ -1,0 +1,807 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
+@import "https://use.fontawesome.com/releases/v5.7.1/css/all.css";
+body {
+  overflow-x: hidden;
+}
+html,body {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerBlack.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerBlackItalic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerBold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Muller Bold;
+  src: url("../fonts/Fontfabric - MullerBoldItalic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Muller Extra Bold;
+  src: url("../fonts/Fontfabric - MullerExtraBold.otf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerExtraBoldItalic.otf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerHairline.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerHairlineItalic.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerHeavy.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerHeavyItalic.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerLight.otf");
+}
+
+@font-face {
+  font-family: Muller Medium;
+  src: url("../fonts/Fontfabric - MullerMedium.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerMediumItalic.otf");
+}
+
+@font-face {
+  font-family: Muller Regular;
+  src: url("../fonts/Fontfabric - MullerRegular.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerRegularItalic.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerThin.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerThinItalic.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerUltraLight.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/Fontfabric - MullerUltraLightItalic.otf");
+}
+
+@media screen and (max-width: 550px) {
+  .coffee {
+    top: 0 !important;
+    right: 0 !important;
+    left: -96px;
+    max-width: 100%;
+  }
+  .w-300px {
+    width: 100% !important;
+  }
+  .icon {
+    display: block !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #icon-content {
+    text-align: center;
+  }
+  .text {
+    line-height: normal !important;
+  }
+  .text-4 {
+    font-size: inherit !important;
+  }
+  .text-3 {
+    line-height: normal !important;
+    font-size: 1.5em !important;
+  }
+  #block-2 {
+    padding: .1em !important;
+  }
+  .hr {
+    left: -39% !important;
+  }
+}
+
+header nav ul li a {
+  color: #111111;
+  font-family: Muller Regular !important;
+  font-size: 14px;
+}
+
+.nav-item {
+  margin-right: 3em;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid red;
+}
+
+.active-link {
+  border-bottom: 2px solid red;
+}
+
+.number {
+  margin-left: 1em;
+}
+
+.number a {
+  display: block;
+  height: 19px;
+  color: #111111;
+  font-family: "Muller Medium";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.text {
+  color: #111111;
+  font-family: "Muller Extra Bold";
+  font-size: 1.9em;
+  font-weight: 400;
+  line-height: 55.49px;
+}
+
+.text-2 {
+  color: #111111;
+  font-family: "Muller Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: .6em;
+}
+
+.ml-b {
+  font-family: "Muller Bold";
+  font-weight: 700;
+}
+
+.icon {
+  display: -webkit-inline-box;
+}
+
+*:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.hr {
+  width: 77px;
+  height: 4px;
+  background-color: #ff0030;
+  clear: both;
+  position: relative;
+  top: -10px;
+  left: -45%;
+}
+
+.hr_1 {
+  width: 77px;
+  height: 4px;
+  background-color: #ff0030;
+  clear: both;
+  position: relative;
+  top: -10px;
+}
+
+.text-3 {
+  color: #111111;
+  font-family: "Muller Bold";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 55.49px;
+}
+
+#block-2 {
+  margin-top: 10em;
+  padding: 2em;
+  background-color: rgba(155, 155, 155, 0.15);
+}
+
+#block-3 {
+  background-color: #1d1a18;
+  padding: 1em;
+  padding-bottom: 150px;
+}
+
+.coffee {
+  top: -162px;
+  left: -360px;
+  position: relative;
+}
+
+.w-300px {
+  width: 300px;
+}
+
+.text-4 {
+  color: #111111;
+  font-family: "Muller Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.text-5 {
+  color: #111111;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 55.49px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: #6a6a6a;
+  position: absolute;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+  cursor: pointer;
+  background-color: #ff0030;
+}
+
+.carousel-control-prev {
+  left: auto !important;
+}
+
+#block-4 {
+  padding-top: 5em;
+  background-color: #f4f4f4;
+  padding-bottom: 5em;
+}
+
+#block-5 {
+  border-radius: 4px;
+  background-color: #1d1a18;
+  padding-bottom: 50px;
+}
+
+.brand-icon {
+  /*height: 76px !important;*/
+}
+
+.card {
+  margin: 1em;
+  border-radius: 0.55rem;
+  -webkit-box-shadow: 5px 8px 49px 16px rgba(0, 0, 1, 0.05);
+  box-shadow: 5px 8px 49px 16px rgba(0, 0, 1, 0.05);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.card-title {
+  color: #111111;
+  font-family: "Muller Bold";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card-text {
+  color: #111111;
+  font-family: "Muller Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card-body {
+  max-height: 255px;
+  min-height: 255px;
+}
+#carrousel {
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  #carrousel {
+    margin: 70px 0px 0px 0px;
+  }
+}
+@media (max-width: 425px) {
+  #carrousel {
+    margin: 50px 0px 0px 0px;
+  }
+}
+#carrousel .title {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+#carrousel .owl-carousel img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  /* height: auto; */
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* height: 300px; */
+  object-fit: cover;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, 0.25);
+  box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, 0.25);
+}
+#carrousel .owl-carousel .owl-item {
+  /*height: 300px;*/
+  position: relative;
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transition: all .2s;
+  -webkit-transform: all .2s;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  #carrousel .owl-carousel .owl-item {
+    height: 270px;
+  }
+}
+@media (max-width: 380px) {
+  #carrousel .owl-carousel .owl-item {
+    height: 200px;
+  }
+}
+#carrousel .owl-carousel .owl-stage-outer {
+  padding-bottom: 10px;
+}
+#carrousel .owl-item.big {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  z-index: 3;
+}
+#carrousel .owl-item.medium {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  z-index: 2;
+}
+#carrousel .owl-item.medium.mdright {
+  /*border: solid 1px red;*/
+  position: relative;
+  left: -30px;
+}
+@media (min-width: 768px) {
+  #carrousel .owl-item.medium.mdright {
+    left: 0px;
+  }
+}
+#carrousel .owl-item.medium.mdleft {
+  /*border: solid 1px blue;*/
+  position: relative;
+  right: -30px;
+}
+@media (min-width: 768px) {
+  #carrousel .owl-item.medium.mdleft {
+    right: 0px;
+  }
+}
+#carrousel .owl-item.smallRight.active {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  position: relative;
+  left: -30px;
+}
+#carrousel .owl-item.smallLeft.active {
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  position: relative;
+  right: -30px;
+}
+#carrousel .owl-nav {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+#carrousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  color: #fff !important;
+  font-size: 26x !important;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: #ff0030;
+}
+#carrousel .owl-nav .owl-prev:hover {
+  color: #adadad !important;
+}
+#carrousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  color: #fff !important;
+  font-size: 26px !important;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: #ff0030;
+}
+#carrousel .owl-nav .owl-next:hover {
+  color: #adadad  !important;
+}
+.card-text-1 {
+  opacity: 0.25;
+  color: #ffffff;
+  font-family: "Muller Medium";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 68.42px;
+}
+.card-title-1 {
+  color: #ffffff;
+  font-family: "Muller Medium";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 55.49px;
+}
+
+
+
+
+
+/* ИДИ НАХУЙ */
+
+.wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block {
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pic {
+	width: 140px;
+	height: 60px;
+}
+
+.circle {
+
+	border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  box-shadow: -1px -1px 15px 1px rgba(0, 0, 0, 0.47);
+  border: 4px solid #ffffff;
+  margin-top: 50px;background-color: #ff0030;
+  position: relative;
+}
+.block > .pic > h6 {
+  color: #000000;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: right;
+}
+
+.mrl {
+	margin-left: 80px;
+}
+
+.mrr {
+	margin-right: 80px;
+}
+
+.arrow_left_right::before{
+  content: '';
+  position: absolute;
+  background-image: url("../img/arrow_left_right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 220px;
+  height: 220px;
+}
+.arrow_left_right_bottom::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/arrow_left_right_bottom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 140px;
+  transform: rotateZ(6deg);
+  top: -18px;
+}
+
+.arrow_left_right_bottom_top::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/arrow_left_right_bottom_top.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 240px;
+  height: 140px;
+  top: -65px;
+  right: -186px;
+}
+.arrow_right_left::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/arrow_right_left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 232px;
+  height: 213px;
+  left: -185px;
+  z-index: 2;
+}
+.arrow_right_left_bottom::before{
+  content: '';
+  position: absolute;
+  background-image: url("../img/arrow_right_left_bottom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 220px;
+  height: 220px;
+  top: -51px;
+  left: -180px;
+  z-index: 2;
+}
+.arrow_right_left_bottom_top::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/arrow_right_left_bottom_top.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 240px;
+  top: -65px;
+  left: -193px;
+  height: 140px;
+z-index: 2;
+}
+
+.circle > h5 {
+  color: #ffffff;
+  font-family: "Muller Bold";
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 43%;
+  justify-content: center;
+}
+/* Icons */
+.icon-airplane {
+  background-image: url("../img/airplane.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 71px;
+  height: 72px;
+}
+.icon-work_tools {
+  background-image: url("../img/work_tools.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 71px;
+  height: 72px;
+}
+.icon-water_drop {
+  background-image: url("../img/water_drop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 71px;
+  height: 72px;
+}
+.icon-certificate {
+  background-image: url("../img/certificate.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 71px;
+  height: 72px;
+}
+.icon-coffee-beans {
+  background-image: url("../img/coffee-beans.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 71px;
+  height: 72px;
+}
+.icon-airplane {
+  background-image: url("../img/airplane.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 71px;
+  height: 72px;
+}
+
+#block-6 {
+  background-color: #f4f4f4;
+}
+
+.form_h1{
+  color: #ffffff;
+  font-family: "Muller Bold";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 55.49px;
+}
+.form_p {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.form_p_p {
+  color: #ffffff;
+  font-family: "Muller Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.form_name{
+  color: #ffffff;
+  font-family: "Muller Bold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.form {
+  width: 444px;
+  height: 458px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.input_s {
+  height: 64px !important;
+  box-shadow: inset 1px 2px 16px rgba(0, 0, 1, 0.05) !important; 
+  border-radius: 12px !important;
+  border: 1px solid #ffffff !important;
+  background-color: #fafafa !important;
+  margin-bottom: 20px !important;
+}
+.input_s:active {
+  opacity: 0.3;
+  color: #211e1c;
+  font-family: "Muller Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26.44px;
+}
+.name:after {
+  content: '';
+  background-image: url("../img/user.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+.inner-addon {
+  position: relative;
+}
+.inner-addon > .fa {
+  position: absolute;
+  padding: 24px;
+  pointer-events: none;
+}
+.left-addon .fa {
+  left: 0px;
+  padding: 30px;
+  }
+  .left-addon input {
+    padding-left: 50px;
+  }
+  .fa-userrrrrrrr {
+    background-image: url('../img/user.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .fa-telephonessssss {
+    background-image: url('../img/tel.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .fa-emailssllslslsl {
+    background-image: url('../img/email.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .pol_kon {
+  width: 261px;
+  height: 12px;
+  color: #211e1c;
+  font-family: "Muller Regular";
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 10px;
+  }
+ .checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+.checkbox + label {
+  position: relative;
+  cursor: pointer;
+}
+.checkbox + label:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -18px;
+    width: 13px;
+    border: 1px solid red;
+    height: 13px;
+    transition: .2s;
+}
+.checkbox + label:after {
+    content: '';
+}
+.checkbox:checked + label:before {
+  background: #fff;
+}
+.checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 7px;
+    height: 7px;
+    background-color: #ff0030;
+    transition: .2s;
+}
